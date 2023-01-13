@@ -1,3 +1,5 @@
+""" Binary search has complexity of O(log n), since it has to go through half of the elements in the array to find the target element. """
+
 def binary_search(arr, target):
 
     print('target : ', target)
