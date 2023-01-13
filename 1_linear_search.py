@@ -6,18 +6,25 @@ def linear_search(arr, target):
             return i
     return None   # not found
 
-
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-""" concat in python """
-print("numbers: " + str(numbers));
 
-print("11 is found in : ")
-print(linear_search(numbers, 11))  # None
+def verify(index):
 
-print("5 is found in : ")
-print(linear_search(numbers, 5))  # 4
+    print("")
+
+    print("List is: ", numbers)
+
+    if index is not None:
+        print("Target found at index: ", index)
+    else:
+        print("Target not found in list")
 
 
+result = linear_search(numbers, 12)
+verify(result)
+
+result = linear_search(numbers, 6)
+verify(result)
    
 
 
