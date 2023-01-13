@@ -10,9 +10,9 @@ def binary_search(arr, target):
 
         mid = (first+last)//2
 
-        if(target==first):
+        if(arr[mid]==target):
             return mid
-        elif(target <last):
+        elif(arr[mid] <target):
             first = mid+1
         else:
             last = mid-1
@@ -37,4 +37,10 @@ result = binary_search(numbers, 12)
 verify(result)
 
 result = binary_search(numbers, 6)
+verify(result)
+
+result = binary_search(numbers, 8)
+verify(result)
+
+result = binary_search(numbers, 2)
 verify(result)
