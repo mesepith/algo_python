@@ -1,3 +1,4 @@
+""" Linear Search Algorithm has complexity of O(n), since it has to go through all the elements in the array to find the target element. """
 def linear_search(arr, target):
     """Return the index position of the target if found, else return None"""
     for i in range(0, len(arr)):
