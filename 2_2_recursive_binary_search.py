@@ -8,6 +8,7 @@ def recursive_binary_search(list, target):
         return False;
     else:
         mid = ((len(list))//2);
+        print('mid value is ', list[mid])
 
         if(list[mid]==target):
             return True;
