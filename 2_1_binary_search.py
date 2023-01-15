@@ -6,6 +6,9 @@
 
 "O(log n) is the complexity of binary search. O(log n) means that the number of operations is proportional to the logarithm of the input size. The logarithm of a number roughly measures the number of times you can divide that number by 2 before you get a value that's less than or equal to 1. "
 
+"Space complexity of binary search is O(1) because an iterative implementation of binary search only allocates a few pointers, and a recursive implementation only allocates a few pointers and additional space on the stack for function calls. "
+
+"If size of array is n in binary search, then space complexity is O(1) as it will take same space for given input. "
 
 def binary_search(arr, target):
 
