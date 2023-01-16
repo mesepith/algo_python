@@ -1,3 +1,5 @@
+"space complexity of recursive binary search is O(log n) because it will take O(log n) space on the stack for function calls."
+
 def recursive_binary_search(list, target):
 
     print(' ')
