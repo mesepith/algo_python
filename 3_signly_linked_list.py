@@ -35,6 +35,19 @@ class LinkedList:
     def __init__(self):
         self.head = None;
 
+    "create wrapper function to get readable data"
+    def __repr__(self):
+        nodes = [];
+        current_node = self.head;
+        while current_node:
+            if current_node is self.head:
+                nodes.append("[Head: %s]" %current_node.dataz1);
+            elif current_node.next_node is None:
+                nodes.append("[Tail: %s]" %current_node.dataz1);
+            else:
+                nodes.append("[%s]" %current_node.dataz1);
+            current_node = current_node.next_node;
+        return '-> '.join(nodes);
 
     "create function to add node at the beginning of the list"
     def add_node_at_beginning(self,dataz4):
@@ -53,20 +66,28 @@ class LinkedList:
         new_node.next_node = self.head;
         self.head = new_node;
 
-
 print();
 
  #call add_node_at_beginning function
 L1 = LinkedList();
 L1.add_node_at_beginning(10);
 L1.add_node_at_beginning(20);
-L1.add_node_at_beginning(30);
-L1.add_node_at_beginning(40);
-L1.add_node_at_beginning(50);
+# L1.add_node_at_beginning(30);
+# L1.add_node_at_beginning(40);
+# L1.add_node_at_beginning(50);
 print()
 print("Value of L1 which is calling add_node_at_beginning fun is : ")
 print(L1)
 
 print();
 
+#call add_node_at_end function
+# L2 = LinkedList();
+# L2.add_node_at_end(10);
+# L2.add_node_at_end(20);
+# L2.add_node_at_end(30);
+# L2.add_node_at_end(40);
+# L2.add_node_at_end(50);
+# print("Value of L2 which is calling add_node_at_end fun is : ")
+# print(L2)
 
