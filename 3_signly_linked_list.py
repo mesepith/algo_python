@@ -62,9 +62,18 @@ class LinkedList:
             print(' self.head or new_node ', new_node)
             return;
         "if list is not empty"
-        print('self.head : if list is not empty', self.head)
         new_node.next_node = self.head;
+        print('new_node.next_node at end:  ', new_node.next_node)
+        print('new_node.next_node.next_node at end:  ', new_node.next_node.next_node)
         self.head = new_node;
+
+        print('self.head at end:  ', self.head);
+        print('self.head.next_node: ', self.head.next_node)
+        print('self.head.next_node.next_node: ', self.head.next_node.next_node)
+
+        print('##### self start #######')
+        print(self)
+        print('##### self end #######')
 
     "create function to add node at the end of the list"
     def add_node_at_end(self,dataz5):
