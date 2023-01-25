@@ -89,6 +89,18 @@ class LinkedList:
             current_node = current_node.next_node;
         current_node.next_node = new_node;
 
+
+    """ search for a node with data and return the node if found """
+    def search(self, key):
+        current_node = self.head;
+        while current_node:
+            if current_node.dataz1 == key:
+                return current_node;
+            else:
+                current_node = current_node.next_node;
+        return None;
+        
+
 print();
 
  #call add_node_at_beginning function
